@@ -1,6 +1,6 @@
 # Mi página web
 
-![Logo de la página](/logo.png)
+![Logo de la página](assets/favicon.png)
 
 ## Acerca de mí
 
