@@ -1,4 +1,5 @@
-![Logo de la página](assets/favicon.png) # Mi página web
+![Logo de la página](assets/favicon.png) 
+# Mi página web
 
 ## Acerca de mí
 
