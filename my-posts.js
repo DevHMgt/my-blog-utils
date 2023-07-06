@@ -1,7 +1,9 @@
 function create_posts(json) {
+
     for (var i = 0; i < randomposts_number; i++) {
         var newEntry = json.feed.entry[i];
         var randompoststitle = newEntry.title.$t;
+
         if ('content' in newEntry) {
             var randompostsnippet = newEntry.content.$t
         } else {
@@ -11,6 +13,7 @@ function create_posts(json) {
                 var randompostsnippet = "";
             }
         };
+
         randompostsnippet = randompostsnippet.replace(/<[^>]*>/g, "");
         if (randompostsnippet.length < randomposts_chars) {
             var randomposts_snippet = randompostsnippet
@@ -19,6 +22,7 @@ function create_posts(json) {
             var whitespace = randompostsnippet.lastIndexOf(" ");
             randomposts_snippet = randompostsnippet.substring(0, whitespace) + "&#133;";
         };
+
         for (var j = 0; j < newEntry.link.length; j++) {
             if ('thr$total' in newEntry) {
                 var randomposts_commentsnum = newEntry.thr$total.$t + ' ' + randomposts_comments
@@ -34,16 +38,15 @@ function create_posts(json) {
                 }
             }
         };
-        document.write('<li>');
-        document.write('<a href="' + randompostsurl + '" rel="nofollow"><img alt="' + randompoststitle + '" src="' + randompoststhumb + '"/></a>');
-        document.write('<div><a href="' + randompostsurl + '" rel="nofollow">' + randompoststitle + '</a></div>');
-        if (randomposts_details == 'yes') {
-            document.write('<span><div  class="random-info">' + randomposts_date.substring(8, 10) + '.' + randomposts_date.substring(5, 7) + '.' + randomposts_date.substring(0, 4) + ' - ' + randomposts_commentsnum) + '</div></span>'
-        };
-        document.write('<br/><div class="random-summary">' + randomposts_snippet + '</div><div style="clear:both"></div></li>')
+
+        document.write('<div class="blog-post hentry index-post">');
+        document.write('<a href="' + randompostsurl + '" rel="nofollow"><div class="post-image-wrap"><img alt="' + randompoststitle + '" src="' + randompoststhumb + '"/></div><div class="post-info"><h2 class="post-title"> '+newEntry.title.$t+' </h2><div class="post-meta"></div></div></a></div>');
     }
 };
 getValue();
+for (var i = 0; i < randomposts_number; i++) {
+    document.write('<script type=\"text/javascript\" src=\"/feeds/posts/default?alt=json-in-script&start-index=' + randomposts_current[i] + '&max-results=1&callback=create_posts\"><\/script>')
+};
 for (var i = 0; i < randomposts_number; i++) {
     document.write('<script type=\"text/javascript\" src=\"/feeds/posts/default?alt=json-in-script&start-index=' + randomposts_current[i] + '&max-results=1&callback=create_posts\"><\/script>')
 };
