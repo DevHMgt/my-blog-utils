@@ -32,7 +32,7 @@ function create_posts(json) {
                 var randompostsurl = newEntry.link[j].href;
                 var randomposts_date = newEntry.published.$t;
                 if ('media$thumbnail' in newEntry) {
-                    var randompoststhumb = newEntry.media$thumbnail.url;
+                    var randompoststhumb = newEntry.media$thumbnail.url.replace(/\/s72\-c\//,'/s300/');
                 } else {
                     randompoststhumb = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3xKPrWwK7et_0tq4VRJ8GJEs3vsqyKzA8Sc1tTxZcsg377GPQuXiep-vNbWUpUNrppN1Q2QUEKCf-Ld9rZRls8vMRgx6Xj9NRJX5xYmSz7qX1YrQ05pM9znGOtjOVN-_0qRrQWhVucT60x33_KGabaIF8KCQzUMTMXDDDp2K6epBNhhTZ33d1y5vKmuw/s358/image.jpg"
                 }
