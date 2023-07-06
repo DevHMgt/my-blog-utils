@@ -1,21 +1,21 @@
-# Mi página web
-
-![Logo de la página](assets/favicon.png)
+![Logo de la página](assets/favicon.png) # Mi página web
 
 ## Acerca de mí
 
-¡Hola! Soy un desarrollador web apasionado por la tecnología y el diseño. Me encanta crear sitios web hermosos y funcionales que ayuden a las personas a lograr sus objetivos en línea.
+¡Hola! Soy un desarrollador web apasionado por la tecnología y el diseño. Me encanta crear juegos, sitios web y apps funcionales que ayuden a las personas a lograr sus objetivos en línea.
 
-## Mis proyectos
+## Mi proyecto en este Repositorio:
 
-### Proyecto 1
+### Archivo js para widget de blog
 
-Este es un proyecto increíble que hice recientemente. Este es contenido de prueba. ¡Prueba la demo hoy mismo!
+Este repositorio contiene un archivo js, el cual se usa como cdn para un widget en mi blog. El widget muestra entradas aleatorias del blog. Se usa para que cada vez que se ingrese al blog, este muestre diferentes jugos para jugar. [Retro HTML Arcade](https://retrohtmlarcade.blogspot.com/)  Retro HTML Arcade es un blog dedicado a mostrar videojuegos retro.
 
-### Proyecto 2
 
-Este es otro proyecto. Contenido de prueba. ¡Descárgala ahora!
+### CDN
 
+El archivo es una variacion del scprit mostrado en la página: [Ayuda de Blogger](www.ayudadeblogger.com) en el post [Como insertar un Random post en Blogger](https://www.ayudadeblogger.com/2014/11/como-insertar-un-random-post-en-blogger.html)
+
+archivo js [my-oists.js](my-post.js)
 ---
 
 Derechos de autor © 2023 Mi página web. Todos los derechos reservados.
