@@ -15,7 +15,9 @@ Este repositorio contiene un archivo js, el cual se usa como cdn para un widget 
 
 El archivo es una variacion del scprit mostrado en la página: [Ayuda de Blogger](www.ayudadeblogger.com) en el post [Como insertar un Random post en Blogger](https://www.ayudadeblogger.com/2014/11/como-insertar-un-random-post-en-blogger.html)
 
-archivo js [https://devhmgt.github.io/-blog-utils/my-oists.js](/my-post.js)
+[archivo js](https://devhmgt.github.io/my-blog-utils/my-post.js)
+
+
 ---
 [Mi Pagina Web](https://devhmgt.github.io/my-blog-utils/)
 Derechos de autor © 2023 Mi página web. Todos los derechos reservados.
